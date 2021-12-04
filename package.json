@@ -1,0 +1,6 @@
+{
+	"name": "dev environment",
+	"dependencies": {
+		"prettier": "^2.4.1"
+	}
+}

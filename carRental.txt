@@ -1,0 +1,41 @@
+let carRental = [
+    {type:'economy', carNumber: 1357, price: 60 },
+    {type:'sedan', carNumber: 1013, price: 70},
+    {type:'luxury', carmNumber: 1619, price: 200},
+    {type:'coupe', carNumber: 2225, price: 120},
+    {type:'convertible', carNumber: 2831, price: 90},
+    {type:'truck', carNumber: 3437, price: 84},
+    {type:'van', carNumber: 4043, price: 102}
+    ];
+
+    let daysBooked =[  ]
+ 
+    function bookACar(carType){
+        for(i = 0; i < carRental.length; i++){
+          if(carType == carRental[i]['type']) {
+
+            daysBooked.push(...carRental.splice(i,1));
+          }    
+         }
+        console.log(...daysBooked);
+        } 
+        bookACar('economy')
+        bookACar('truck')
+        
+        function returnCar (carType){
+          for(i = 0; i < daysBooked.length; i++){
+            if(carType == daysBooked[i['type']])
+            carRental.push(...daysBooked.splce(i,1));
+          }
+        
+        }
+     console.log(carRental);
+     returnCar('economy')
+    
+  
+
+
+
+
+  
+
