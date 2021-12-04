@@ -22,9 +22,7 @@ let myHotel = {
             console.log(this.guestRoomTypeOptions[i])
         for(let j =0; j< this.availableRooms[i].length; j++){
             console.log(this.availableRooms[i][j])
-        summary : function(){
-            let summary = ` Room ${this.availableRooms[i][j]} is a ${this.guestRoomTypeOptions[i]}
-        }
+        
         }
             
 }
